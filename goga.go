@@ -46,7 +46,7 @@ urls := []string{
    }
 
    func fetch(url string, ch chan<- string) {
-s, err := goscraper.Scrape(url, 5, 5000, myUA, "http://167.172.109.12:46329")
+s, err := goscraper.Scrape(url, 5, 5000, myUA, "http://167.172.109.12:46329")  // первый удачный прокси кстати был Украинский!!
       if err != nil {
         fmt.Println(err)  /// В любой непонятной ситуации делай проверку на наличие ошибок!
         return  
